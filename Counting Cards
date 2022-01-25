@@ -7,6 +7,12 @@ if (card > 1 && card < 7) {
 else if (card === 10 || card === 'J' || card === 'Q' || card === 'K' || card === 'A') {
   count --;
 }
+else if (card > 6 && card < 10) {
+  count += 0;
+}
+else {
+  return "choose correct card";
+}
 if (count > 0) {
   return count + " Bet";
 }
@@ -19,3 +25,4 @@ cc(2); // 1 Bet
 cc(7); // 0 Hold
 cc(10); // -1 Hold
 cc('J'); // -1 Hold
+cc(100); // "choose correct card"
