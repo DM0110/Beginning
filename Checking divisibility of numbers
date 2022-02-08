@@ -1,0 +1,5 @@
+for (let number = 0; number <= 100; number++) {
+  if (number % 5 === 0 && number % 10 !== 0) {
+    console.log(`Number ${number} is divisible by 5, but not divisible by 10`);
+  }
+}
